@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Sara Arcila Cano</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Sara Arcila Cano</h1>
+      <nav class="nav">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <img src="assets/Foto Sara.jpg" alt="Foto de Sara" class="avatar" />
+        <div class="bio">
+          <h2>Sobre mí</h2>
+          <p><strong>Hola mi nombre es Sara Arcila Cano.</strong> Estudiante de último semestre de ingeniería mecánica en la Universidad EIA. Con cursos en energías renovables con FH Münster de Alemania y en entrepreneurship con el Georgia Tech de Estados Unidos. Con 5 años de experiencia en call center bilingüe y 2 años como administradora.</p>
+          <ul class="skills">
+            <li>Solid Edge / Inventor / Matlab</li>
+            <li>Microsoft office /  Canva</li>
+            <li>Trabajo en equipo / Resolución de problemas / Aprendizaje rápido / Disciplina</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Proyectos</h2>
+
+        <div class="project-grid">
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <h3>Proyecto 1 — SMIG</h3>
+            <p class="proj-desc">El propósito es desarrollar una aplicación móvil para el monitoreo y gestión de ganado en tiempo real para ser utilizada tanto por ganaderos a pequeña escala, como por empresas productoras de lácteos o carnes. El sistema permitirá a los usuarios monitorear diversas variables del ganado, como el peso, la edad, la nutrición, las enfermedades, la ubicación en tiempo real, entre otras.
+            Además, la aplicación incluirá alertas y notificaciones sobre eventos importantes relacionados con el ganado, como cambios de ubicación, problemas de salud o fechas de eventos clave como el parto. El sistema también podrá escalar de acuerdo con las necesidades de los usuarios, desde pequeñas fincas hasta grandes empresas productoras.
+            </p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, Java</p>
+            <p><strong>Mi rol:</strong> Diseñadora y desarrolladora</p>
+            <img src="assets/Proyecto1.png" alt="Captura proyecto 1" />
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <h3>Proyecto 2 — Diseño de controladores para tanques</h3>
+            <p class="proj-desc">El objetivo del trabajo es diseñar y/o sintonizar diferentes controladores y comparar su desempeño, para un sistema de tanques en cascada.</p>
+            <p><strong>Tecnologías:</strong> LabView / Matlab</p>
+            <p><strong>Mi rol:</strong> Diseñadora y desarrolladora </p>
+            <img src="assets/Proyecto 2.png" alt="Captura proyecto 2" />
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <h3>Proyecto 3 — Diseñar mecanismo de dirección de Ackermann</h3>
+            <p class="proj-desc">Se realiza el análisis de un mecanismo de dirección tipo Ackerman modificado, compuesto por seis barras. El objetivo es fabricar esta dierección para un VTH (vehículo de tracción humana).</p>
+            <p><strong>Tecnologías:</strong> Python, Google colab</p>
+            <p><strong>Mi rol:</strong> Backend y diseñadora</p>
+            <img src="assets/Proyecto3.png" alt="Captura proyecto 3" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section hobbies">
+      <div class="container">
+        <h2>Hobbies</h2>
+        <div class="hobby-list">
+          <div class="hobby">
+            <h4>Voleibol</h4>
+            <p>El hacer actividad es importante no solo por la salud física si no mental. Es un distractor que permite poner la mente en blanco y olvidarse de todos los problemas.</p>
+            <img src="assets/Voleibol.JPEG" alt="Voleibol" />
+          </div>
+          <div class="hobby">
+            <h4>Animales</h4>
+            <p>El amor que siento por los animales me da una sensibilidad y una manera de ver el mundo mas amable, me da las ganas y la habilidad de ayudar, de ser generosa con quien lo necesite y de generar espacios seguros para quienes no pueden tenerlo.</p>
+            <img src="assets/Animales.jpg" alt="Animales" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>Email: <a href="mailto:sara.arcila@eia.edu.co">sara.arcila@eia.edu.co</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sara-arcila-cano-408511264" target="_blank">Mi LinkedIn</a></p>
+        <p>GitHub: <a href="https://github.com/Saraarcilac/Ingenieria-web" target="_blank">Mi GitHub</a></p>
+
+        <!-- Formulario (usa Formspree o reemplaza action si quieres otro servicio) -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+          <label>
+            Nombre
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Mensaje
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit">Enviar mensaje</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sara Arcila — Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
